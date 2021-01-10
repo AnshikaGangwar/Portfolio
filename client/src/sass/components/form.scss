@@ -1,0 +1,44 @@
+.center{
+    justify-content: center;
+    align-items: center;
+}
+.bg{
+    background: #323232;
+     width: 600px;
+    
+}
+.form_align{
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+.group{
+    padding: 5;
+    justify-content: center;
+    align-items: center;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.label{
+    color: #E1DDDD
+}
+.placeholder{
+    color: #4D4B4B;
+    opacity: 0.2;
+    height: 10px;
+}
+.textarea{
+    display: flex;
+    width: 40%;
+    height: 100%;
+    color: #4D4B4B;
+    opacity: 0.2;
+}
+.title{
+    color:#E1DDDD;
+    margin-bottom:20px;
+    font-size: 36px;
+}
