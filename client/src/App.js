@@ -4,18 +4,18 @@ import Homepage from './views/home';
 import form from './components/form'
 import card from './components/cardDisplay'
 import footer from './components/socialFooter'
+import navbar from './components/navbar'
 import './sass/components/cardDisplay.scss'
 import './sass/main.scss'
 
 function App() {
   return (
-    <div>
+    <div className="body vh-100">
     <Router>
       <switch>
         <Route path="/" component={footer}/>
       </switch>
     </Router>
-      
     </div>
   );
 }

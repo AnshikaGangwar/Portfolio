@@ -1,6 +1,7 @@
 .logo{
     align-items: space-between !important;
     justify-content: center;
+    display: flex;
 }
 .img{
     padding-right: 20px;
@@ -13,5 +14,4 @@
 }
 .name_div{
     padding: 20px;
-    margin-top: 10px
 }

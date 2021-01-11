@@ -7,16 +7,19 @@ import git from '../assets/github.svg'
 import gmail from '../assets/gmail.svg'
 import insta from '../assets/insta.svg'
 import '../sass/components/socialFooter.scss'
+import Card from './cardDisplay'
+import '../sass/main.scss'
 
 export default class socialFooter extends Component {
     render() {
         return (
-            <div>
+            <div className="body">
+              <Card/>
                 <MDBFooter>
                    <MDBContainer>
                        <MDBRow>
                            <MDBCol>
-                               <div className="container name_div">
+                               <div className="container name_div logo">
                                    <span className="name">Anshika Gangwar</span>
                                </div>
                                <div className=" container logo">
