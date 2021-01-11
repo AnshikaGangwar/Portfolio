@@ -16,6 +16,9 @@ export default class socialFooter extends Component {
                    <MDBContainer>
                        <MDBRow>
                            <MDBCol>
+                               <div className="container name_div">
+                                   <span className="name">Anshika Gangwar</span>
+                               </div>
                                <div className=" container logo">
                                   <ExternalLink href="https://facebook.com/npns99">
                                       <img src={gmail} className="img"/>
