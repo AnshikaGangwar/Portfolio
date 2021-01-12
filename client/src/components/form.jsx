@@ -6,9 +6,9 @@ import '../sass/components/form.scss'
 export default class form extends Component {
     render() {
         return (
-            <div className='center'>
-                <Card>
-                    <Card.Body className="bg">
+            <div className='center body'>
+                <Card className="bg">
+                    <Card.Body>
                     <span className="title">Let's combine our ideas and colaborate</span>
                         <Form className="form_align">
                             <Form.Group controlId="form_name" className="form-inline ">

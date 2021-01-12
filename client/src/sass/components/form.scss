@@ -1,11 +1,18 @@
+.body{
+    background:#282828
+}
 .center{
     justify-content: center;
     align-items: center;
     display: flex;
 }
 .bg{
-    background: #323232;
-     width: 600px;
+     background: rgba(#7c7c7c,0.8);
+     width: 80%;
+    
+}
+.card{
+    border:0px !important;
     
 }
 .form_align{
