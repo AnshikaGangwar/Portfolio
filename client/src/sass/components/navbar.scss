@@ -1,3 +1,18 @@
-.navbar_cantainer{
+.navbar_container{
+      background-color  : #282828 !important;
+}
+.navlink_text{
+    color:#E1DDDD !important;
+    font-weight: 400;
+}
+.navbar-toggler-icon{
+    background-image: url("../../assets/hamburger.svg") !important;
+
+}
+.navbar-toggler{
+    &:focus{
+        outline:none !important;
+    }
+    
     
 }
