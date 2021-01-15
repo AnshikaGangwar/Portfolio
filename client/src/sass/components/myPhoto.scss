@@ -1,0 +1,21 @@
+.body{
+    background: #282828;
+}
+.me_text{
+    color: #E1DDDD;
+    font-weight: 600;
+    font-size: 3rem;
+    font-family: $heading;
+    padding-top:5rem;
+    margin:3rem;
+
+    
+}
+.cursor{
+    color: #E1DDDD !important;
+    // show: true;
+    // blink: true;
+    // element: '|';
+    // hideWhenDone: false;
+    // hideWhenDoneDelay: 1000;
+}
