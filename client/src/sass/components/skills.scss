@@ -1,0 +1,44 @@
+.skill_body{
+    background : #282828;
+}
+.skill_wrapper{
+     width : 100%;
+     height:100vh;
+    background-image : url("../../assets/grid.svg");
+    background-repeat : no-repeat;
+    background-position : center;
+    background-size :contain;
+    
+}
+.image{
+    width: 50%;
+    height: 50%;
+    border-color: #fff;
+}
+.skill_title{
+    color: #E1DDDD;
+    font-weight: 700;
+    font-size:3rem;
+    font-family: $font-1;
+}
+.icon-text{
+    
+    position: relative;
+    
+
+}
+.skill_text{
+    color: #E1DDDD;
+    font-weight: 500;
+    font-size: 1.5rem;
+    font-family: $font-1;
+    padding-top:5.5rem;
+    margin:0 auto;
+    position: relative;
+    left:0
+    
+}
+.row-position{
+    margin: 1rem;
+    padding:2.5rem
+}
