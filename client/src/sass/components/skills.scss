@@ -42,3 +42,26 @@
     margin: 1rem;
     padding:2rem
 }
+.rotate {
+    animation-duration: 5s;
+    animation-iteration-count: 10;
+    animation-name: yoyo;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes yoyo {
+    from { transform: rotate(  0deg); }
+    to   { transform: rotate(360deg); }
+  }
+  .rotate1 {
+    animation-duration: 5s;
+    animation-iteration-count: 10;
+    animation-name: yoyo1;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes yoyo1 {
+    0%{ transform: scale(  0); }
+    50%{ transform: scale(0.7); }
+    100%{ transform: scale(1); }
+  } 
