@@ -11,7 +11,7 @@ import Card from './components/cardDisplay'
 import Footer from './components/socialFooter'
 import Navbar from './components/navbar'
 import Skills from './components/skills'
-import MyPhoto from './components/myPhoto'
+import Intro from './components/intro'
 function App() {
   return (
     <div >
@@ -21,7 +21,7 @@ function App() {
         <Route path="/" exact component={Form}/>
         <Route path="/form" exact component={Form}/>
         <Route path="/skills" exact component={Skills}/>
-        <Route path="/me" exact component={MyPhoto}/>
+        <Route path="/intro" exact component={Intro}/>
       </switch>
       <Footer />
     </Router>

@@ -1,0 +1,34 @@
+.intro_wrapper{
+    display:flex;
+    flex-direction:column;
+   // justify-content:center;
+   margin-top:200px;
+    align-items: start;
+}
+.me_text{
+    color: #E1DDDD;
+    font-weight: 500;
+    font-size: 2.5rem;
+    font-family: $font-3;
+    
+}
+.arrow{
+    color: #616161;
+    font-weight: 500;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-top: -100px;
+}
+.photo{
+    width: 90%;
+    height: 90%;
+   margin-top: 20px;
+   animation: a1 8s linear;
+}
+@keyframes a1{
+    0%{ opacity: 0}
+    25%{ opacity: 0.5}
+    50%{ opacity: 0.75}
+    100%{ opacity: 1}
+}
