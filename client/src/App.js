@@ -12,6 +12,7 @@ import Footer from './components/socialFooter'
 import Navbar from './components/navbar'
 import Skills from './components/skills'
 import Intro from './components/intro'
+import Journey from './components/journey'
 function App() {
   return (
     <div >
@@ -22,6 +23,7 @@ function App() {
         <Route path="/form" exact component={Form}/>
         <Route path="/skills" exact component={Skills}/>
         <Route path="/intro" exact component={Intro}/>
+        <Route path="/journey" exact component={Journey}/>
       </switch>
       <Footer />
     </Router>
