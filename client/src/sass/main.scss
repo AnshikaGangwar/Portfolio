@@ -11,3 +11,13 @@
 // .body{
 //     background:#282828;
 // }
+.home-container{
+    background: #282828;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.position{
+    margin-bottom:140px;
+}

@@ -1,7 +1,13 @@
-.wrapper{
+.card-wrapper{
     background:#282828;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+   // justify-content: center;
+    align-items: center;
+}
+.card-title{
+    display: flex;
+
 }
 .item{
     display: flex;
@@ -31,12 +37,14 @@
     align-items: center;
     justify-content: center;
     width: 70% !important;
+    margin-top:60px;
+    align-items: center;
 }
 .carousel-inner{
     width: 70% !important;
 }
   .carousel-indicators {
-    bottom: 110px !important;
+    bottom: -80px !important;
     li{ 
         border-radius:50%!important;
         width: 0.7rem !important;

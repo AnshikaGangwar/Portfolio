@@ -20,7 +20,7 @@ function App() {
     <Router>
     <Navbar />
       <switch>
-        <Route path="/" exact component={Form}/>
+        <Route path="/" exact component={Homepage}/>
         <Route path="/form" exact component={Form}/>
         <Route path="/skills" exact component={Skills}/>
         <Route path="/intro" exact component={Intro}/>

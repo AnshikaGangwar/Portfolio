@@ -9,8 +9,12 @@ export default class CardContainer extends Component {
     };
     render() {
         return (
-            <div className="container-fluid wrapper vh-100">
+            <div className="container-fluid card-wrapper vh-100">
+               <div className="card-title">
+               <span className="skill_title">Some of my works</span>
+               </div>
                <Carousel>
+                   
                    <Carousel.Item className="item" interval={500}>
                        <div className="container carousel_card_wrapper"> 
                           <div className="col-md-4 d-flex justify-content-center align-items-center">
