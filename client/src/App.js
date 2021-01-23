@@ -13,6 +13,7 @@ import Navbar from './components/navbar'
 import Skills from './components/skills'
 import Intro from './components/intro'
 import Journey from './components/journey'
+import MyWork from './components/cardContainer'
 function App() {
   return (
     <div >
@@ -24,6 +25,7 @@ function App() {
         <Route path="/skills" exact component={Skills}/>
         <Route path="/intro" exact component={Intro}/>
         <Route path="/journey" exact component={Journey}/>
+        <Route path="/mywork" exact component={MyWork}/>
       </switch>
       <Footer />
     </Router>
