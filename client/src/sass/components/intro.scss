@@ -7,7 +7,7 @@
 }
 .me_text{
     color: #E1DDDD;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 2.5rem;
     font-family: $font-3;
     
@@ -19,7 +19,16 @@
     display: flex;
     justify-content: center;
     margin-top: -100px;
+    animation: arrowDown 1.5s infinite alternate forwards;
 }
+    @keyframes arrowDown {
+        0% {
+            margin-top:-93px;  
+        }
+        100% {
+            margin-top:-100px;  
+            }
+    }
 .photo{
     width: 90%;
     height: 90%;
