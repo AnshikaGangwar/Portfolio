@@ -7,7 +7,7 @@ export default class form extends Component {
     render() {
         return (
             <div className='center body'>
-                <Card className="bg">
+                <Card className="bg p-5">
                     <Card.Body>
                     <span className="title">Let's combine our ideas and colaborate</span>
                         <Form className="form_align">

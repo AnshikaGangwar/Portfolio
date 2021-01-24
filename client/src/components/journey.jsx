@@ -14,10 +14,10 @@ export default class Journey extends Component {
                  </div>
                <div className=" front ">
                 <div className=" circle1 ">
-                   <span className="text ml-4">Shri Gulab Rai Montessori Sr. Sec. School , Bareilly</span>
+                   <span className="text ml-2 text-center">Shri Gulab Rai Montessori Sr. Sec. School , Bareilly</span>
                 </div>
                 <div className=" circle2 ">
-                <span className="text ml-4">B.Tech Information Technology,
+                <span className="text ml-2 text-center">B.Tech Information Technology,
                   Motilal Nehru National Institute of Technology Allahabad</span>
                 </div>
                 </div>
