@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ScrollAnimation from 'react-animate-on-scroll';
 import ScrollReveal from 'scrollreveal';
 import Intro from '../components/intro'
 import Skills from '../components/skills'
@@ -24,13 +23,11 @@ export default class Homepage extends Component {
          <div className="position"> 
          <Intro/>
          </div>
-
-          <ScrollAnimation animateIn="fadeIn">        
-
-         <div className="position skills_wrapper_home">
+    
+          <div className="position skills_wrapper_home">
          <Skills/>
          </div>
-         </ScrollAnimation>
+         
 
 
          <div className="position journey_wrapper_home">
