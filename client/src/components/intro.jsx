@@ -15,7 +15,7 @@ export default class MyPhoto extends Component {
               <div className="row container-fluid vh-100 w-100">
                  <div className="col-md-5 intro_wrapper">
                  <Typist cursor={{show:false}} avgTypingDelay={this.delay} > 
-                       <span className="me_text">Hey I am Anshika Gangwar !!!  
+                       <span className="me_text"> Hey I am Anshika Gangwar  !!!  
                        Wanna know me ??</span> 
                  </Typist> 
                  </div> 

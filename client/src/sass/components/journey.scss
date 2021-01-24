@@ -22,7 +22,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: c1 4s ease;
     opacity: 0.7;
 }
 .circle2{
@@ -34,7 +33,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: c1 4s ease;
     opacity: 0.7;
     animation-delay: 6s;
 }
@@ -47,7 +45,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: c1 4s linear;
     opacity: 0.7;
     animation-delay: 18s;
 }
@@ -59,7 +56,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: c1 4s ease;
     opacity: 0.7;
     animation-delay: 12s;
 }
@@ -67,19 +63,4 @@
     color: #E1DDDD;
     font-family: $heading;
     font-size:1.5rem;
-}
-@keyframes c1{
-    0%{
-        opacity: 0.5;
-        scale: 0.2;
-    }
-    50%{ opacity:0.7;
-         scale: 0.5;
-    }
-    75%{ opacity:1;
-         scale: 1;
-    }
-    100%{ opacity:0.7;
-          scale: 1;
-    }
 }
