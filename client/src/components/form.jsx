@@ -6,12 +6,12 @@ import '../sass/components/form.scss'
 export default class form extends Component {
     render() {
         return (
-            <div className='center body'>
-                <Card className="bg p-5">
+            <div className='container-fluid center body vh-100'>
+                <Card className="bg  p-5">
                     <Card.Body>
                     <span className="title">Let's combine our ideas and colaborate</span>
                         <Form className="form_align">
-                            <Form.Group controlId="form_name" className="form-inline ">
+                            <Form.Group controlId="form_name" className="form-inline mt-5">
                                 <Form.Label className="label">your name</Form.Label>
                                 <Form.Control type="text" placeholder="name" className="placeholder ml-4"/>  
                             </Form.Group>
@@ -24,7 +24,7 @@ export default class form extends Component {
                                 <textarea class="form-control" className="textarea"/>
                             </Form.Group>
                         </Form>
-                        <Button variant="contained" color="secondary">colaborate</Button>
+                        <Button variant="contained" style={{background:"#B93838", color:"#E1DDDD"}} className="mt-4">colaborate</Button>
                     </Card.Body>
                 </Card>
             </div>

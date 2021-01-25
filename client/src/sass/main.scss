@@ -8,16 +8,24 @@
 @import "./components/journey.scss";
 @import "./components/cardContainer.scss";
 
-// .body{
-//     background:#282828;
-// }
+body{
+    background:#282828 !important;
+}
 .home-container{
-    background: #282828;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    background: url("../assets/bg.svg");
+   // background-repeat : no-repeat;
+  // background-position : center;
+   background-size :contain;
 
+}
+.home_container_main{
+    background: url("../assets/bg.svg");
+   // background-repeat : no-repeat;
+  // background-position : center;
+   background-size :contain;
+   background-attachment: fixed;
 }
 .position{
     margin-bottom:140px;
+    z-index: 200;
 }

@@ -19,26 +19,25 @@ export default class Homepage extends Component {
   
   render() {
     return (
-      <div className="container-fluid home-container">
+      <div className="container-fluid home_container_main">
          <div className="position"> 
-         <Intro/>
+         <Intro slide={this.contactform}/>
          </div>
     
           <div className="position skills_wrapper_home">
          <Skills/>
          </div>
-         
-
 
          <div className="position journey_wrapper_home">
          <Journey/>
+      
          </div>
 
          <div className="position">
          <MyWork/>
          </div>
 
-         <div className="position form_wrapper_home">
+         <div ref={this.contactform} className="position form_wrapper_home">
           <Form/>          
          </div>
       </div>

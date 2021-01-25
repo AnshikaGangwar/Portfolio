@@ -1,31 +1,15 @@
 .skill_body{
-    background : #282828;
-}
-.skill_wrapper{
-     width : 100%;
-     height:100vh;
-    background-image : url("../../assets/grid.svg");
-    background-repeat : no-repeat;
-    background-position : center;
-    background-size :contain;
-    
-}
-.image{
-    width: 50%;
-    height: 50%;
-    border-color: #fff;
+    background : transparent;
+    display: flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
 }
 .skill_title{
     color: #E1DDDD;
     font-weight: 700;
     font-size:3rem;
     font-family: $font-1;
-}
-.icon-text{
-    
-    position: relative;
-    
-
 }
 .skill_text{
     color: #E1DDDD;

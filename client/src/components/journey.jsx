@@ -1,8 +1,5 @@
 import React, { Component } from 'react'
-import C1 from '../assets/Ellipse 17.svg'
-import C2 from '../assets/Ellipse 18.svg'
-import C3 from '../assets/Ellipse 20.svg'
-import C4 from '../assets/Ellipse 22.svg'
+
 
 
 export default class Journey extends Component {

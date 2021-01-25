@@ -1,5 +1,5 @@
 .body{
-    background:#282828
+    background:transparent
 }
 .center{
     justify-content: center;
@@ -7,7 +7,7 @@
     display: flex;
 }
 .bg{
-     background: rgba(#7c7c7c,0.8);
+    background: linear-gradient(247.97deg, rgba(81, 63, 57, 0.36) 2.22%, #513F39 56.86%) !important;
      width: 80%;
     
 }
@@ -34,14 +34,14 @@
     color: #E1DDDD
 }
 .placeholder{
-    color: #4D4B4B;
+    color:  #4D4B4B!important;
     opacity: 0.2;
-    height: 10px;
+    height: 40px !important;
 }
 .textarea{
     display: flex;
     width: 40%;
-    height: 100%;
+    height: 100px;
     color: #4D4B4B;
     opacity: 0.2;
 }

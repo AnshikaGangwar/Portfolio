@@ -9,9 +9,10 @@ export default class MyPhoto extends Component {
     stdelay1=1400;
     stdelay2=2500;
     hideWhenDoneDelay=true;
+    executeContactFormScroll=()=> this.props.contactform.current.scrollIntoView();
     render() {
         return (
-            <div style={{background:"#282828"}}> 
+            <div className="container-fluid vh-100 w-100" style={{background:"transparent"}}> 
               <div className="row container-fluid vh-100 w-100">
                  <div className="col-md-5 intro_wrapper">
                  <Typist cursor={{show:false}} avgTypingDelay={this.delay} > 
@@ -24,7 +25,7 @@ export default class MyPhoto extends Component {
                    </div>           
               </div>
               <div className="arrow">
-                <i className="fa fa-angle-double-down" />
+                <i className="fa fa-angle-double-down arrow_" onClick={this.executeContactFormScroll} />
               </div>
             </div>
         )

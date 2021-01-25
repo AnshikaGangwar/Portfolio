@@ -8,6 +8,7 @@ import insta from '../assets/insta.svg'
 import Card from './cardDisplay'
 
 export default class socialFooter extends Component {
+    email="anshikagangwar289@gmail.com";
     render() {
         return (
             <div className="footer_wrapper">
@@ -19,19 +20,19 @@ export default class socialFooter extends Component {
                                    <span className="name">Anshika Gangwar</span>
                                </div>
                                <div className=" container logo">
-                                  <a href="https://facebook.com/npns99" >
+                                  <a href={"mailto:"+this.email} >
                                       <img src={gmail} className="img footer_img"/>
                                   </a>  
-                                  <a href="https://facebook.com/npns99">
+                                  <a href="https://github.com/AnshikaGangwar">
                                       <img src={git} className="img footer_img"/>
                                   </a>  
-                                  <a href="https://facebook.com/npns99">
+                                  <a href="https://www.instagram.com/anshika_2927/">
                                       <img src={insta} className="img footer_img"/>
                                   </a> 
-                                  <a href="https://facebook.com/npns99">
+                                  <a href="https://www.linkedin.com/in/anshika-gangwar/">
                                       <img src={linkedIn} className="img footer_img"/>
                                   </a> 
-                                  <a href="https://facebook.com/npns99">
+                                  <a href="https://www.facebook.com/anshika.gangwar.357/">
                                       <img src={fb} className="img footer_img"/>
                                   </a>   
                                </div>
