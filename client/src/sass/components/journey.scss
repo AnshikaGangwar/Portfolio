@@ -63,11 +63,11 @@
 }
 
 .skill_title{
-        svg {
+    svg {
         display: block;
         font: 1.5em 'Montserrat';
         width: 960px;
-        height: 300px;
+        height: 100px;
         margin: 0 auto;
     }
 
@@ -98,7 +98,7 @@
     .text-copy:nth-child(4){
         stroke: #d47a94;
         animation-delay: -4s;
-    }
+    }  
 
     .text-copy:nth-child(5){
         stroke: #d6af66;
