@@ -1,88 +1,228 @@
 
-@import url('//fonts.googleapis.com/css?family=Pacifico&text=Pure');
-@import url('//fonts.googleapis.com/css?family=Roboto:700&text=css');
-@import url('//fonts.googleapis.com/css?family=Kaushan+Script&text=!');
+// @import url('//fonts.googleapis.com/css?family=Pacifico&text=Pure');
+// @import url('//fonts.googleapis.com/css?family=Roboto:700&text=css');
+// @import url('//fonts.googleapis.com/css?family=Kaushan+Script&text=!');
 
 
 
 
 
-.test_container{ 
-    min-height: 450px;
-    height: 100vh;
-    margin: 0;
-    background: radial-gradient(circle, darken(dodgerblue, 10%), #1f4f96, #1b2949, #000);
-  }
+// .test_container{ 
+//     min-height: 450px;
+//     height: 100vh;
+//     margin: 0;
+//     background: radial-gradient(circle, darken(dodgerblue, 10%), #1f4f96, #1b2949, #000);
+//   }
 
-.stage {
-    height: 300px;
-    width: 500px;
-    margin: auto;
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    perspective: 9999px;
-    transform-style: preserve-3d;
-  }
+// .stage {
+//     height: 300px;
+//     width: 500px;
+//     margin: auto;
+//     position: absolute;
+//     top: 0; right: 0; bottom: 0; left: 0;
+//     perspective: 9999px;
+//     transform-style: preserve-3d;
+//   }
   
-  .layer {
+//   .layer {
+//     width: 100%;
+//     height: 100%;
+//     position: absolute;
+//     transform-style: preserve-3d;
+//     animation: gol-gol 5s infinite alternate ease-in-out -7.5s;
+//     animation-fill-mode: forwards;
+//     transform: rotateY(40deg) rotateX(33deg) translateZ(0);
+//   }
+  
+//   .layer:after {
+//     font: 150px/0.65 'Pacifico', 'Kaushan Script', Futura, 'Roboto', 'Trebuchet MS', Helvetica, sans-serif;
+//     content: 'Hey \A    Sexy\A        lady!\A';
+//     white-space: pre;
+//     text-align: center;
+//     line-height:90%;
+//     height: 100%;
+//     width: 100%;
+//     position: absolute;
+//     top: 50px; 
+//     color: darken(#fff, 4%);
+//     letter-spacing: -1px;
+//     text-shadow: 4px 0 10px hsla(0, 0%, 0%, .13);
+//   }
+  
+//   $i: 1;
+//   $NUM_LAYERS: 20;
+//   @for $i from 1 through $NUM_LAYERS {
+//     .layer:nth-child(#{$i}):after{
+//       transform: translateZ(($i - 1) * -1.5px);
+//     }
+//   }
+  
+//   .layer:nth-child(n+#{round($NUM_LAYERS/2)}):after {
+//     -webkit-text-stroke: 3px hsla(0, 0%, 0%, .25);
+//   }
+  
+//   .layer:nth-child(n+#{round($NUM_LAYERS/2 + 1)}):after {
+//     -webkit-text-stroke: 15px dodgerblue;
+//     text-shadow: 6px 0 6px darken(dodgerblue,35%),
+//                  5px 5px 5px darken(dodgerblue,40%),
+//                  0 6px 6px darken(dodgerblue,35%);
+//   }
+  
+//   .layer:nth-child(n+#{round($NUM_LAYERS/2 + 2)}):after {
+//     -webkit-text-stroke: 15px darken(dodgerblue, 10%);
+//   }
+  
+//   .layer:last-child:after {
+//     -webkit-text-stroke: 17px hsla(0, 0%, 0%, .1);
+//   }
+  
+//   .layer:first-child:after{
+//     color: #fff;
+//     text-shadow: none;
+//   }
+  
+//   @keyframes gol-gol {
+//     100% { transform: rotateY(-40deg) rotateX(-43deg); }
+//   }
+  
+  ///second
+  *{
+    margin:0;
+    padding:0
+}
+html,body{
     width: 100%;
     height: 100%;
+    position: relative;
+    background: #e8f9ff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #e8f9ff 0%, #ffffff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e8f9ff), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #e8f9ff 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #e8f9ff 0%,#ffffff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #e8f9ff 0%,#ffffff 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #e8f9ff 0%,#ffffff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8f9ff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+}
+.flowerContain{
     position: absolute;
-    transform-style: preserve-3d;
-    animation: gol-gol 5s infinite alternate ease-in-out -7.5s;
-    animation-fill-mode: forwards;
-    transform: rotateY(40deg) rotateX(33deg) translateZ(0);
-  }
-  
-  .layer:after {
-    font: 150px/0.65 'Pacifico', 'Kaushan Script', Futura, 'Roboto', 'Trebuchet MS', Helvetica, sans-serif;
-    content: 'Hey \A    Sexy\A        lady!\A';
-    white-space: pre;
-    text-align: center;
-    line-height:90%;
-    height: 100%;
-    width: 100%;
+    top: 50%;
+    left: 50%;
+    width: 183px;
+    height: 183px;
+    margin: -91px 0 0 -91px;
+    cursor: pointer;
+}
+.center{
     position: absolute;
-    top: 50px; 
-    color: darken(#fff, 4%);
-    letter-spacing: -1px;
-    text-shadow: 4px 0 10px hsla(0, 0%, 0%, .13);
-  }
-  
-  $i: 1;
-  $NUM_LAYERS: 20;
-  @for $i from 1 through $NUM_LAYERS {
-    .layer:nth-child(#{$i}):after{
-      transform: translateZ(($i - 1) * -1.5px);
-    }
-  }
-  
-  .layer:nth-child(n+#{round($NUM_LAYERS/2)}):after {
-    -webkit-text-stroke: 3px hsla(0, 0%, 0%, .25);
-  }
-  
-  .layer:nth-child(n+#{round($NUM_LAYERS/2 + 1)}):after {
-    -webkit-text-stroke: 15px dodgerblue;
-    text-shadow: 6px 0 6px darken(dodgerblue,35%),
-                 5px 5px 5px darken(dodgerblue,40%),
-                 0 6px 6px darken(dodgerblue,35%);
-  }
-  
-  .layer:nth-child(n+#{round($NUM_LAYERS/2 + 2)}):after {
-    -webkit-text-stroke: 15px darken(dodgerblue, 10%);
-  }
-  
-  .layer:last-child:after {
-    -webkit-text-stroke: 17px hsla(0, 0%, 0%, .1);
-  }
-  
-  .layer:first-child:after{
-    color: #fff;
-    text-shadow: none;
-  }
-  
-  @keyframes gol-gol {
-    100% { transform: rotateY(-40deg) rotateX(-43deg); }
-  }
-  
-  
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+.leafContain{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.leaf{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+    transform-origin: center center;
+    transform: scale(0);
+}
+.flowerContain:hover .leaf{
+    opacity: 1;
+    transform: scale(1);
+}
+.flowerContain:hover .leaf1{
+    animation: leaf1Anim 0.7s ease;
+}
+@keyframes leaf1Anim {
+  0%   { transform: scale(0); }
+  70%   { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+.flowerContain:hover .leaf2{
+    transition: all 0s 0.2s ease-out;
+    animation: leaf2Anim 0.7s 0.2s ease;
+}
+@keyframes leaf2Anim {
+  0%   { transform: scale(0); }
+  70%   { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+.flowerContain:hover .leaf3{
+    transition: all 0s 0.4s ease-out;
+    animation: leaf3Anim 0.7s 0.4s ease;
+}
+@keyframes leaf3Anim {
+  0%   { transform: scale(0); }
+  70%   { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+.flowerContain:hover .leaf4{
+    transition: all 0s 0.6s ease-out;
+    animation: leaf4Anim 0.7s 0.6s ease;
+}
+@keyframes leaf4Anim {
+  0%   { transform: scale(0); }
+  70%   { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+.flowerContain:hover .leaf5{
+    transition: all 0s 0.8s ease-out;
+    animation: leaf5Anim 0.7s 0.8s ease;
+}
+@keyframes leaf5Anim {
+  0%   { transform: scale(0); }
+  70%   { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+.flowerContain:hover .leaf6{
+    transition: all 0s 1s ease-out;
+    animation: leaf6Anim 0.7s 1s ease;
+}
+@keyframes leaf6Anim {
+  0%   { transform: scale(0); }
+  70%   { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+.flowerContain:hover .leaf7{
+    transition: all 0s 1.2s ease-out;
+    animation: leaf7Anim 0.7s 1.2s ease;
+}
+@keyframes leaf7Anim {
+  0%   { transform: scale(0); }
+  70%   { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+.flowerContain:hover .leaf8{
+    transition: all 0s 1.4s ease-out;
+    animation: leaf8Anim 0.7s 1.4s ease;
+}
+@keyframes leaf8Anim {
+  0%   { transform: scale(0); }
+  70%   { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+.flowerContain:hover .leaf9{
+    transition: all 0s 1.6s ease-out;
+    animation: leaf9Anim 0.7s 1.6s ease;
+}
+@keyframes leaf9Anim {
+  0%   { transform: scale(0); }
+  70%   { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+.flowerContain:hover .leaf10{
+    transition: all 0s 1.8s ease-out;
+    animation: leaf10Anim 0.7s 1.8s ease;
+}
+@keyframes leaf10Anim {
+  0%   { transform: scale(0); }
+  70%   { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
