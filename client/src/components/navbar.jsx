@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import {BrowserRouter as Router, Link} from 'react-router-dom'
 import A from '../assets/A.svg'
-import '../sass/components/navbar.scss'
 
 import { Navbar, Nav, } from 'react-bootstrap';
 

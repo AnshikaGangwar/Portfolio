@@ -2,8 +2,28 @@ import React, { Component } from 'react'
 import Form from 'react-bootstrap/Form'
 import Card from 'react-bootstrap/Card'
 import Button from '@material-ui/core/Button'
-import '../sass/components/form.scss'
+import axios from 'axios'
+
 export default class form extends Component {
+    state={
+        name: "name",
+        email: "email",
+        msg: ""
+    }
+
+    onFormSubmit = async(event) =>{
+        event.preventDefault();
+      const formdetails= {
+           name : this.state.name,
+           email : this.state.email,
+           message: this.state.msg,
+       }
+       const res = await axios.post('http://localhost:6972/api/form/formupload', formdetails)
+        .then((res)=>{
+            console.log(res);
+        })
+    }
+
     render() {
         return (
             <div className='container-fluid center body vh-100'>
@@ -13,18 +33,18 @@ export default class form extends Component {
                         <Form className="form_align">
                             <Form.Group controlId="form_name" className="form-inline mt-5">
                                 <Form.Label className="label">your name</Form.Label>
-                                <Form.Control type="text" placeholder="name" className="placeholder ml-4"/>  
+                                <Form.Control type="text" placeholder="name" className="placeholder ml-4" onChange={(event)=>{this.setState({name:event.target.value})}} />  
                             </Form.Group>
                             <Form.Group controlId="form_email" className="form-inline">
                                 <Form.Label className="label">your email</Form.Label>
-                                <Form.Control type="email" placeholder="email" className="placeholder ml-4"/>
+                                <Form.Control type="email" placeholder="email" className="placeholder ml-4" onChange={(event)=>{this.setState({email:event.target.value})}}/>
                             </Form.Group>
                             <Form.Group controlId="form_text" className="group">
                                 <Form.Label className="label">wanna say something</Form.Label>
-                                <textarea class="form-control" className="textarea"/>
+                                <textarea class="form-control" className="textarea" onChange={(event)=>{this.setState({msg:event.target.value})}}/>
                             </Form.Group>
                         </Form>
-                        <Button variant="contained" style={{background:"#B93838", color:"#E1DDDD"}} className="mt-4">colaborate</Button>
+                        <Button variant="contained" style={{background:"#B93838", color:"#E1DDDD"}} className="mt-4" onClick={this.onFormSubmit}  >colaborate</Button>
                     </Card.Body>
                 </Card>
             </div>

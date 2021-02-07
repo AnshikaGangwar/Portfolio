@@ -1,5 +1,4 @@
 @import "./abstracts/font.scss";
-@import "./components/cardDisplay.scss";
 @import "./components/form.scss";
 @import "./components/navbar.scss";
 @import "./components/socialFooter.scss";
@@ -7,6 +6,7 @@
 @import "./components/intro.scss";
 @import "./components/journey.scss";
 @import "./components/cardContainer.scss";
+@import "./components/admin.scss";
 
 body{
     background:#282828 !important;

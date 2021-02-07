@@ -5,6 +5,39 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
 const path = require('path');
+const nodemailer = require('nodemailer');
+const myform = require('./routes/myform');
+const skills = require('./routes/skills');
+const journey = require('./routes/journey');
+const mywork = require('./routes/mywork');
+const { getMaxListeners } = require('process');
+
+
+const sendMessage = async () =>{
+  let testAccount = await nodemailer.createTestAccount();
+  let transporter = await nodemailer.createTransport(
+    {
+      host : "smtp.gmail.com",
+      port : 587,
+      secure : false,
+      auth: {
+        user: "acw.dnsp@gmail.com",
+        pass : "ilovekanpur3000"
+      }
+    }
+  )
+
+  let info =  await transporter.sendMail({
+    from: '"Anshika Gangwar" <acw.dnsp@gmail.com>', 
+    to: "namanpatel453@gmail.com",
+    subject: "Test Mail",
+    text: "Test Mail sent",
+  })
+
+console.log("msg sent", info.messageId)
+
+}
+
 
 
 //Port
@@ -22,8 +55,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(express.static('client/build'));
 app.use(express.json());
-
-
+app.use('/api/form',myform);
+app.use('/api/personalskill',skills);
+app.use('/api/personaljourney',journey);
+app.use('/api/personalwork',mywork);
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -37,8 +72,42 @@ app.get('*', (req,res) =>{
   
   //connect to DB
   mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true }, () => console.log("Database is connected!"));
+  // mongoose.connect('http://localhost/personalportfolio')
+  //    .then(() => console.log("Connected"))
+  //    .catch((err) => console.log("Error in connecting to Mongo", err));
 
-  app.listen(PORT, function() {
-    console.log('App running on port 6972');
+  
+  
+ 
+
+
+  
+  
+  // let portfolio = new Portfolio({
+  //   name : "Anshika Gangwar",
+  //   skills : ["React Native","React","Python","Machine Learning","C/C++","Node"] ,
+  //   journey : ["Shri Gulab Rai Montessori Sr. Sec. School, Bareilly", 
+  //   "B.Tech Information Technology, Motilal Nehru National Institute of Technology Allahabad" ,
+  //   "DESIS Ascend Fellowship" ,
+  //   "Salesforce Intern'21 "] ,
+  //   projects : [{
+  //     title: "OneML",
+  //     description: "Website - edu-social platformfor machine learning algorithms visualization Users can visualize the machine learning algorithms like linear regression and know how the various formulas work and their affecting factors"
+  //   },
+  // {
+  //   title: "TextViaImage",
+  //   description: "Cross platform app to extract text from static images and facility to share and save the text."
+  // }]
+  // })
+
+
+ 
+
+ //const p = portfolio.save().then(()=> console.log("Saved"));
+
+ 
+
+app.listen(PORT, function() {
+    console.log(`App running on port ${PORT}`);
 }); 
  

@@ -14,7 +14,11 @@
 //     background: radial-gradient(circle, darken(dodgerblue, 10%), #1f4f96, #1b2949, #000);
 //   }
 
+<<<<<<< HEAD
+// .teststage {
+=======
 // .stage {
+>>>>>>> d6926743b97bdf66e7bfdd780620d3738a1b6463
 //     height: 300px;
 //     width: 500px;
 //     margin: auto;
@@ -24,7 +28,11 @@
 //     transform-style: preserve-3d;
 //   }
   
+<<<<<<< HEAD
+//   .testlayer {
+=======
 //   .layer {
+>>>>>>> d6926743b97bdf66e7bfdd780620d3738a1b6463
 //     width: 100%;
 //     height: 100%;
 //     position: absolute;
@@ -34,7 +42,11 @@
 //     transform: rotateY(40deg) rotateX(33deg) translateZ(0);
 //   }
   
+<<<<<<< HEAD
+//   .testlayer:after {
+=======
 //   .layer:after {
+>>>>>>> d6926743b97bdf66e7bfdd780620d3738a1b6463
 //     font: 150px/0.65 'Pacifico', 'Kaushan Script', Futura, 'Roboto', 'Trebuchet MS', Helvetica, sans-serif;
 //     content: 'Hey \A    Sexy\A        lady!\A';
 //     white-space: pre;
@@ -50,24 +62,49 @@
 //   }
   
 //   $i: 1;
+<<<<<<< HEAD
+//   $NUM_testlayerS: 20;
+//   @for $i from 1 through $NUM_testlayerS {
+//     .testlayer:nth-child(#{$i}):after{
+=======
 //   $NUM_LAYERS: 20;
 //   @for $i from 1 through $NUM_LAYERS {
 //     .layer:nth-child(#{$i}):after{
+>>>>>>> d6926743b97bdf66e7bfdd780620d3738a1b6463
 //       transform: translateZ(($i - 1) * -1.5px);
 //     }
 //   }
   
+<<<<<<< HEAD
+//   .testlayer:nth-child(n+#{round($NUM_testlayerS/2)}):after {
+//     -webkit-text-stroke: 3px hsla(0, 0%, 0%, .25);
+//   }
+  
+//   .testlayer:nth-child(n+#{round($NUM_testlayerS/2 + 1)}):after {
+=======
 //   .layer:nth-child(n+#{round($NUM_LAYERS/2)}):after {
 //     -webkit-text-stroke: 3px hsla(0, 0%, 0%, .25);
 //   }
   
 //   .layer:nth-child(n+#{round($NUM_LAYERS/2 + 1)}):after {
+>>>>>>> d6926743b97bdf66e7bfdd780620d3738a1b6463
 //     -webkit-text-stroke: 15px dodgerblue;
 //     text-shadow: 6px 0 6px darken(dodgerblue,35%),
 //                  5px 5px 5px darken(dodgerblue,40%),
 //                  0 6px 6px darken(dodgerblue,35%);
 //   }
   
+<<<<<<< HEAD
+//   .testlayer:nth-child(n+#{round($NUM_testlayerS/2 + 2)}):after {
+//     -webkit-text-stroke: 15px darken(dodgerblue, 10%);
+//   }
+  
+//   .testlayer:last-child:after {
+//     -webkit-text-stroke: 17px hsla(0, 0%, 0%, .1);
+//   }
+  
+//   .testlayer:first-child:after{
+=======
 //   .layer:nth-child(n+#{round($NUM_LAYERS/2 + 2)}):after {
 //     -webkit-text-stroke: 15px darken(dodgerblue, 10%);
 //   }
@@ -77,6 +114,7 @@
 //   }
   
 //   .layer:first-child:after{
+>>>>>>> d6926743b97bdf66e7bfdd780620d3738a1b6463
 //     color: #fff;
 //     text-shadow: none;
 //   }

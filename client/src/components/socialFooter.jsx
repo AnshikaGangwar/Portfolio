@@ -5,7 +5,6 @@ import linkedIn from '../assets/linkedIn.svg'
 import git from '../assets/github.svg'
 import gmail from '../assets/gmail.svg'
 import insta from '../assets/insta.svg'
-import Card from './cardDisplay'
 
 export default class socialFooter extends Component {
     email="anshikagangwar289@gmail.com";
