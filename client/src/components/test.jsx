@@ -5,27 +5,27 @@ class test extends Component {
     render() {
         return (
             <div className="test_container">
-                <div class="stage">
-                    <div class="layer"></div>
-                    <div class="layer"></div>
-                    <div class="layer"></div>
-                    <div class="layer"></div>
-                    <div class="layer"></div>
-                    <div class="layer"></div>
-                    <div class="layer"></div>
-                    <div class="layer"></div>
-                    <div class="layer"></div>
-                    <div class="layer"></div>
-                    <div class="layer"></div>
-                    <div class="layer"></div>
-                    <div class="layer"></div>
-                    <div class="layer"></div>
-                    <div class="layer"></div>
-                    <div class="layer"></div>
-                    <div class="layer"></div>
-                    <div class="layer"></div>
-                    <div class="layer"></div>
-                    <div class="layer"></div>
+                <div class="teststage">
+                    <div class="testlayer"></div>
+                    <div class="testlayer"></div>
+                    <div class="testlayer"></div>
+                    <div class="testlayer"></div>
+                    <div class="testlayer"></div>
+                    <div class="testlayer"></div>
+                    <div class="testlayer"></div>
+                    <div class="testlayer"></div>
+                    <div class="testlayer"></div>
+                    <div class="testlayer"></div>
+                    <div class="testlayer"></div>
+                    <div class="testlayer"></div>
+                    <div class="testlayer"></div>
+                    <div class="testlayer"></div>
+                    <div class="testlayer"></div>
+                    <div class="testlayer"></div>
+                    <div class="testlayer"></div>
+                    <div class="testlayer"></div>
+                    <div class="testlayer"></div>
+                    <div class="testlayer"></div>
                 </div>
             </div>
         );
