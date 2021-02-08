@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import Form from 'react-bootstrap/Form'
 import Button from '@material-ui/core/Button'
+import { base } from '../base';
 
 export default class admin extends Component {
 
@@ -15,7 +16,7 @@ export default class admin extends Component {
        const newname={
            name:this.state.name
        }
-       const data=await axios.post('http://localhost:6972/nameupload', newname)
+       const data=await axios.post(base +'nameupload', newname)
        .then((res) => {
            console.log(res);
        })
@@ -25,7 +26,7 @@ export default class admin extends Component {
       const skill= {
         skill:this.state.skill
       }
-      const data = await axios.post('http://localhost:6972/api/personalskill/skillupload',skill)
+      const data = await axios.post(base + 'api/personalskill/skillupload',skill)
           .then((res)=>{
             console.log(res);
           })

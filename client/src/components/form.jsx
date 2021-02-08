@@ -3,6 +3,8 @@ import Form from 'react-bootstrap/Form'
 import Card from 'react-bootstrap/Card'
 import Button from '@material-ui/core/Button'
 import axios from 'axios'
+import { base } from '../base';
+
 
 export default class form extends Component {
     state={
@@ -18,7 +20,7 @@ export default class form extends Component {
            email : this.state.email,
            message: this.state.msg,
        }
-       const res = await axios.post('http://localhost:6972/api/form/formupload', formdetails)
+       const res = await axios.post(base + 'api/form/formupload', formdetails)
         .then((res)=>{
             console.log(res);
         })
