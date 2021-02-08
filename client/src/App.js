@@ -6,6 +6,7 @@ import Homepage from './views/home';
 import Footer from './components/socialFooter'
 import Navbar from './components/navbar'
 import AdminPage from './components/admin'
+import TestPage from './components/test'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <switch>
         <Route path="/" exact component={Homepage}/>
         <Route path="/admin" exact component={AdminPage}/>
+        <Route path="/test" exact component={TestPage}/>
       </switch>
       <Footer />
     </Router>

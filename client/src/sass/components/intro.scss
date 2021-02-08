@@ -46,3 +46,39 @@
     50%{ opacity: 0.75}
     100%{ opacity: 1}
 }
+@media (max-width: 768px){
+    .me_text{
+        font-weight: 600;
+        font-size: 2rem;
+        
+    }
+    .intro_wrapper{
+       margin-top:90px;
+        align-items: start;
+    }
+    .photo{
+        width: 90%;
+        height: 90%;
+       margin-top: -100px;
+    }
+
+}
+@media (max-width: 450px){
+    .me_text{
+        font-weight: 600;
+        font-size: 1.5rem;
+        
+    }
+    .intro_wrapper{
+       margin-top:90px;        
+    }
+    .photo{
+        width: 120%;
+        height: 120%;
+       margin-top: -300px;
+    }
+    .arrow{
+        margin-top:-200px;
+    }
+
+}
