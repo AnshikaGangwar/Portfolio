@@ -82,3 +82,21 @@
     }
 
 }
+@media (max-width: 380px){
+    .me_text{
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    .intro_wrapper{
+       margin-top:90px;        
+    }
+    .photo{
+        width: 120%;
+        height: 120%;
+        margin-top: -230px;
+    }
+    .arrow{
+        margin-top:-200px;
+    }
+
+}

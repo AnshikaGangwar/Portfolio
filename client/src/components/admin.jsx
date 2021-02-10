@@ -9,6 +9,9 @@ export default class admin extends Component {
     state={
         name:"",
         skill:"",
+        journey:"",
+        title:"",
+        description:"",
     }
   
     onNameChanged= async(event ) => {
@@ -31,6 +34,26 @@ export default class admin extends Component {
             console.log(res);
           })
     }
+
+    addJourney = async (event) =>{
+      event.preventDefault();
+      const journey = {
+        journey : this.state.journey
+      }
+      const data = await axios.post('http://localhost:6972/api/personaljourney/journeyupload', journey)
+               .then((res)=>{
+                 console.log(res);
+              })     
+    }
+
+    addWork = async (event) => {
+      event.preventDefault();
+      const work ={
+        title : this.state.title,
+        description : this.state.description,
+      }
+    }
+
     render() {
         return (
             <div>
@@ -52,6 +75,33 @@ export default class admin extends Component {
               </Form>
               <Button variant="contained" style={{background:"#B93838", color:"#E1DDDD", marginRight:"20px"}} onClick={this.addSkill}>Add Skill</Button>
               <Button variant="contained" style={{background:"#B93838", color:"#E1DDDD"}}>Remove Skill</Button>
+              
+            </div>
+
+            <div className="container name-form-container mt-5">
+              <span className="form-title">Change journey</span>
+              <Form className="mt-3">
+                <Form.Group controlId="journey_form" className="form-inline">
+                  <Form.Control type="text" placeholder="skill" onChange={(e)=>{this.setState({journey: e.target.value})}} />
+                </Form.Group>
+              </Form>
+              <Button variant="contained" style={{background:"#B93838", color:"#E1DDDD", marginRight:"20px"}} onClick={this.addJourney}>Add Journey</Button>
+              <Button variant="contained" style={{background:"#B93838", color:"#E1DDDD"}}>Remove Journey</Button>
+              
+            </div>
+            
+            <div className="container name-form-container mt-5">
+              <span className="form-title">Change my works</span>
+              <Form className="mt-3">
+                <Form.Group controlId="mywork_form1" className="form-inline">
+                  <Form.Control type="text" placeholder="title" onChange={(e)=>{this.setState({title: e.target.value})}} />
+                </Form.Group>
+                <Form.Group controlId="mywork_form2" className="form-inline">
+                  <Form.Control type="text" placeholder="description" onChange={(e)=>{this.setState({description: e.target.value})}} />
+                </Form.Group>
+              </Form>
+              <Button variant="contained" style={{background:"#B93838", color:"#E1DDDD", marginRight:"20px"}} onClick={this.addWork}>Add My Work</Button>
+              <Button variant="contained" style={{background:"#B93838", color:"#E1DDDD"}}>Remove Work</Button>
               
             </div>
             </div>

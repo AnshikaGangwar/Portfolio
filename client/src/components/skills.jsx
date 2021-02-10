@@ -23,37 +23,37 @@ export default class Skill extends Component {
       </div>
       <div className="d-flex justify-content-center">
       
-            <div className="column">
+            <div className="column skill_wrapper">
                <div className="row-position">
-                 <img src={this.state.icons[0]}/>
-                 <span className="skill_text">{this.state.skills[0]}</span>
+                 <img className="skill_img_icon" src={this.state.icons[0]}/>
+                 <span className="text-center skill_text">{this.state.skills[0]}</span>
                </div>
 
                <div className="row-position">
-                 <img src={this.state.icons[1]}/>
-                 <span className="skill_text">{this.state.skills[1]}</span>
+                 <img className="skill_img_icon" src={this.state.icons[1]}/>
+                 <span className="text-center skill_text">{this.state.skills[1]}</span>
                </div>
 
                <div className="row-position">
-                 <img src={this.state.icons[2]}/>
-                 <span className="skill_text">{this.state.skills[2]}</span>
+                 <img className="skill_img_icon" src={this.state.icons[2]}/>
+                 <span className="text-center skill_text">{this.state.skills[2]}</span>
                </div>
             </div>
             <div className="column">
 
                <div className="row-position">
-                 <img src={this.state.icons[3]}/>
-                 <span className="skill_text">{this.state.skills[3]}</span>
+                 <img className="skill_img_icon" src={this.state.icons[3]}/>
+                 <span className="text-center skill_text">{this.state.skills[3]}</span>
                </div>
 
                <div className="row-position">
-                 <img src={this.state.icons[4]}/>
-                 <span className="skill_text">{this.state.skills[4]}</span>
+                 <img className="skill_img_icon" src={this.state.icons[4]}/>
+                 <span className="text-center skill_text">{this.state.skills[4]}</span>
                </div>
 
                <div className="row-position">
-                 <img src={this.state.icons[5]}/>
-                 <span className="skill_text">{this.state.skills[5]}</span>
+                 <img className="skill_img_icon" src={this.state.icons[5]}/>
+                 <span className="text-center skill_text">{this.state.skills[5]}</span>
                </div>
             </div>
 

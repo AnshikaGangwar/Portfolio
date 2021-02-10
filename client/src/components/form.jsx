@@ -35,11 +35,11 @@ export default class form extends Component {
                         <Form className="form_align">
                             <Form.Group controlId="form_name" className="form-inline mt-5">
                                 <Form.Label className="label">your name</Form.Label>
-                                <Form.Control type="text" placeholder="name" className="placeholder ml-4" onChange={(event)=>{this.setState({name:event.target.value})}} />  
+                                <Form.Control type="text" placeholder="name" className=" placeholder" onChange={(event)=>{this.setState({name:event.target.value})}} />  
                             </Form.Group>
                             <Form.Group controlId="form_email" className="form-inline">
                                 <Form.Label className="label">your email</Form.Label>
-                                <Form.Control type="email" placeholder="email" className="placeholder ml-4" onChange={(event)=>{this.setState({email:event.target.value})}}/>
+                                <Form.Control type="email" placeholder="email" className="placeholder" onChange={(event)=>{this.setState({email:event.target.value})}}/>
                             </Form.Group>
                             <Form.Group controlId="form_text" className="group">
                                 <Form.Label className="label">wanna say something</Form.Label>
