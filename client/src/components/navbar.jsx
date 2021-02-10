@@ -18,7 +18,7 @@ export default class navbar extends Component {
                     <Nav.Link className="navlink_text">
                      <a href="#">account</a>
                     </Nav.Link>
-                    <Nav.Link className="navlink_text">
+                    <Nav.Link className="navlink_text" href="https://github.com/AnshikaGangwar">
                      <a href="https://github.com/AnshikaGangwar">github</a>
                     </Nav.Link>
                     <Nav.Link className="navlink_text">
