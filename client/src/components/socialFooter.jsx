@@ -10,7 +10,7 @@ export default class socialFooter extends Component {
     email="anshikagangwar289@gmail.com";
     render() {
         return (
-            <div className="footer_wrapper">
+            <div className="footer_wrapper mb-4">
                 <footer>
                    <div className="container">
                        <div className="row">

@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 import textrec from '../assets/textrec.jpeg'
 import oneml from '../assets/oneml.jpeg'
+import { base } from '../base';
+
 export default class CardContainer extends Component {
     state={
         index:0

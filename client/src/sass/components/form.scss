@@ -8,7 +8,7 @@
 }
 .bg{
     background: linear-gradient(247.97deg, rgba(81, 63, 57, 0.36) 2.22%, #513F39 56.86%) !important;
-     width: 80%;
+     width: 70%;
     
 }
 .card{
@@ -16,15 +16,11 @@
     
 }
 .form_align{
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    
+   
+    margin-top: 20px; 
 }
 .group{
     padding: 5;
-    justify-content: center;
-    align-items: center;
 }
 .row{
     display: flex;
@@ -37,6 +33,7 @@
     color:  #4D4B4B!important;
     opacity: 0.2;
     height: 40px !important;
+    margin-left: 1.4rem !important;
 }
 .textarea{
     display: flex;
@@ -49,4 +46,24 @@
     color:#E1DDDD;
     margin-bottom:20px;
     font-size: 36px;
+}
+@media (max-width:468px){
+
+    .bg{
+         width: 100%;
+    }
+  
+    .placeholder{
+        height: 20px !important;
+        margin-left: 0rem !important;
+    }
+    .textarea{
+        width: 100%;
+        height: 80px;
+    }
+    .title{
+       // margin-bottom:100px !important;
+        font-size: 25px;
+    }
+
 }

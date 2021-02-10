@@ -65,9 +65,54 @@
     color: #E1DDDD
 }
 .content1{
-    display:flex;
-    justify-content: center;
+    // display:flex;
+    // justify-content: center;
     font-size: 1.5rem;
     font-family: $font-3;
     color: #E1DDDD
+}
+
+@media (max-width: 468px){
+
+    .item-image1{
+        // position:absolute;
+         width:80%;
+         height:80%;
+        border-radius: 4%;
+        //z-index: 200;
+    }
+    .carousel_card_wrapper1{
+        border-radius: 2%;
+        height:450px;
+        width: 100% !important;
+        
+    }
+    .carousel{
+      
+        width: 100% !important;
+        margin-top:30px !important;
+        align-items: center !important;
+       
+    }
+    .carousel-inner{
+         width: 100% !important;
+    }
+      .carousel-indicators {
+        li{ 
+            border-radius:50%!important;
+            width: 0.5rem !important;
+            height: 0.5rem !important;
+            
+         }
+         
+      }    
+    .heading1{
+        font-size: 1.8rem;
+        }
+    .content1{
+        font-size: 1rem;
+        
+    }
+    
+
 }
