@@ -46,10 +46,26 @@
     50%{ opacity: 0.75}
     100%{ opacity: 1}
 }
+@media (max-width: 998px){
+    .me_text{
+       font-size: 2.2rem;
+       
+    }
+    .intro_wrapper{
+       margin-top:150px;
+    }
+    .photo{
+       margin-top:-100px; 
+    }
+    .arrow{
+        margin-top:-180px;
+    }
+
+}
 @media (max-width: 768px){
     .me_text{
         font-weight: 600;
-        font-size: 2rem;
+        font-size: 1.8rem;
         
     }
     .intro_wrapper{
@@ -60,6 +76,9 @@
         width: 90%;
         height: 90%;
        margin-top: -100px;
+    }
+    .arrow{
+        margin-top:-150px;
     }
 
 }
@@ -75,7 +94,7 @@
     .photo{
         width: 120%;
         height: 120%;
-       margin-top: -300px;
+       margin-top: -350px;
     }
     .arrow{
         margin-top:-200px;
@@ -93,7 +112,7 @@
     .photo{
         width: 120%;
         height: 120%;
-        margin-top: -230px;
+        margin-top: -350px;
     }
     .arrow{
         margin-top:-200px;

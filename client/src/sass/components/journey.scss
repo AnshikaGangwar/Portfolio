@@ -114,49 +114,55 @@
     .circle1{
         width: 130px;
         height: 130px;
-       // background:#5c6930;
-        //border-radius: 50%;
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
-        // opacity: 1;
     }
     .circle2{
-        width: 175px;
-        height: 175px;
-        // background:#8f3030;
-        // border-radius: 50%;
-        // margin-top:100px;
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
-        // opacity: 1;
+        width: 190px;
+        height: 190px;
+       
     }
     .circle3{
         width: 150px;
         height: 150px;
-        // background:#445580;
-        // border-radius: 50%;
-        // margin-top: 80px;
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
+       
     
     }
     .circle4{
-        width: 100px;
-        height: 100px;
-        // background:#747272;
-        // border-radius: 50%;
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
-        
+        width: 120px;
+        height: 120px;
+               
     }
     .text{
         color: #E1DDDD;
         font-family: $heading;
         font-size:1rem;
+        width: 90%;
+    }
+    
+}
+@media (max-width:368px){
+ 
+    .circle1{
+        width: 130px;
+        height: 130px;
+    }
+    .circle2{
+        width: 175px;
+        height: 175px;
+    }
+    .circle3{
+        width: 150px;
+        height: 150px;
+    }
+    .circle4{
+        width: 100px;
+        height: 100px;
+        
+    }
+    .text{
+        color: #E1DDDD;
+        font-family: $heading;
+        font-size:0.8rem;
+        width: 90%;
     }
     
 }
