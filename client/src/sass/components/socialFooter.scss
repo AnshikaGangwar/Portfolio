@@ -19,3 +19,27 @@
 .name_div{
     padding: 20px;
 }
+@media (max-width: 368px){
+    .logo{
+        a{
+            text-align: center;
+        }
+
+    }
+    .img{
+        padding-right: 0px;
+        width: 50%;
+    }
+}
+@media (max-width: 480px){
+    .logo{
+        a{
+            text-align: center;
+        }
+
+    }
+    .img{
+        padding-right: 0px;
+        width: 60%;
+    }
+}

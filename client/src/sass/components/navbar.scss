@@ -46,3 +46,14 @@
     
     
 }
+@media (max-width:380px){
+  .navlink_text{
+    height: 40px;
+  }
+}
+@media (max-width:998px){
+  .navlink_text{
+    text-align: center;
+    height: 40px;
+  }
+}

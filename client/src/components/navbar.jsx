@@ -15,10 +15,7 @@ export default class navbar extends Component {
                 <Navbar.Toggle aria-controls="basic-navbar-collapse" />
                 <Navbar.Collapse id="basic-navbar-collapse">
                 <Nav className="w-100 justify-content-end mr-5">
-                    <Nav.Link className="navlink_text">
-                     <a href="#">account</a>
-                    </Nav.Link>
-                    <Nav.Link className="navlink_text">
+                    <Nav.Link className="navlink_text" href="https://github.com/AnshikaGangwar">
                      <a href="https://github.com/AnshikaGangwar">github</a>
                     </Nav.Link>
                     <Nav.Link className="navlink_text">
