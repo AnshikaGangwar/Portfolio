@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Carousel from 'react-bootstrap/Carousel'
-import textrec from '../assets/textrec.jpeg'
+import textrec from '../assets/textrec.jpg'
 import oneml from '../assets/oneml.jpeg'
 import { base } from '../base';
 
@@ -35,7 +35,7 @@ export default class CardContainer extends Component {
                    <Carousel.Item >
                        <div className="container carousel_card_wrapper1"> 
                           <div className="col-md-4 d-flex justify-content-center align-items-center">
-                          <img src={textrec} className="item-image1"/>
+                          <img src={textrec} className="item-image2"/>
                           </div>
                           <div className="col-md-8">
                           <span className="heading1">TEXTVIAIMAGE</span>

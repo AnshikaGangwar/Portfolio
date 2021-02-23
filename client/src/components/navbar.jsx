@@ -11,7 +11,7 @@ export default class navbar extends Component {
                 <Navbar expand='lg'  className="navbar navbar_container" >
                 <Navbar.Brand className="ml-5">
                   <img src={A} width="30" height="30"/>
-                </Navbar.Brand>
+                </Navbar.Brand> 
                 <Navbar.Toggle aria-controls="basic-navbar-collapse" />
                 <Navbar.Collapse id="basic-navbar-collapse">
                 <Nav className="w-100 justify-content-end mr-5">

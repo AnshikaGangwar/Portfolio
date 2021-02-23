@@ -75,9 +75,10 @@
     .photo{
         width: 120%;
         height: 120%;
-       margin-top: -300px;
+       margin-top: -350px;
     }
     .arrow{
+        display:none;
         margin-top:-200px;
     }
 
@@ -96,6 +97,7 @@
         margin-top: -230px;
     }
     .arrow{
+        display:none !important;
         margin-top:-200px;
     }
 

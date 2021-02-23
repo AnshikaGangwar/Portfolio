@@ -40,7 +40,7 @@ export default class admin extends Component {
       const journey = {
         journey : this.state.journey
       }
-      const data = await axios.post('http://localhost:6972/api/personaljourney/journeyupload', journey)
+      const data = await axios.post(base + 'api/personaljourney/journeyupload', journey)
                .then((res)=>{
                  console.log(res);
               })     
