@@ -19,7 +19,7 @@ export default class navbar extends Component {
                      <a href="https://github.com/AnshikaGangwar">github</a>
                     </Nav.Link>
                     <Nav.Link className="navlink_text">
-                     <a href="#">get in touch</a>
+                     <a href="/#get_in_touch">get in touch</a>
                     </Nav.Link>
                 </Nav>
                 </Navbar.Collapse>

@@ -55,7 +55,7 @@ export default class Homepage extends Component {
          <MyWork/>
          </div>
 
-         <div ref={this.contactform} className="position form_wrapper_home">
+         <div id="get_in_touch" ref={this.contactform} className="position form_wrapper_home">
           <Form/>          
          </div>
       </div>
